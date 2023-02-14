@@ -3,9 +3,10 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  background-image: url(../images/Rectangle\ 1.png);
+  background-image: url(../images/background2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 .body {
   box-sizing: border-box;
@@ -273,7 +274,22 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.pedagog {
+  display: flex;
+}
+.kortinka6 {
+  height: 400px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.pedagog_text {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.pedagogo_otsp {
+  margin-bottom: 100px;
+}
 
 
 
