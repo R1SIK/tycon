@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
   box-sizing: border-box;
@@ -163,6 +163,65 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+.text_2023 {
+  color:#ffffff;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+}
+.text_2023_12 {
+  color:#ffffff;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+}
+.text_2023_123 {
+  color:#ffffff;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  font-weight: 300;
+  
+}
+.body2023 {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.body2023_1 {
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.body2023_1_1 {
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
+}
+.body2023_2 {
+  margin-left: 70px;
+  margin-right: 70px;
+  display: inline;
+  margin-top: -70px;
+}
+.kortinka3 {
+  height: 400px;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+.body_main2 {
+  background-image: url(../images/background2.png);
+  height: 2200px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 
 
