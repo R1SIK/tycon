@@ -135,3 +135,53 @@ a:hover {
 .kortinka {
   height: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {
+  .text-sitata {
+    flex-direction: column-reverse;
+  }
+  .kortinka {
+    height: auto;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+  .korobka {
+    max-height: 400px;
+    font-size: 23px;
+  }
+  
+}
