@@ -7,6 +7,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url(../images/Rectangle\ 1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -135,7 +142,27 @@ a:hover {
 .kortinka {
   height: 300px;
 }
-
+.pedagogprosh12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textprosh {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 100px;
+}
+.kortinka2 {
+  height: 350px;
+}
+.pedagogprosh123 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
