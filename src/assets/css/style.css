@@ -221,6 +221,34 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.body_main23 {
+  background-image: url(../images/background2.png);
+  height: 1500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body2023_12345 {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.kortinka4 {
+  height: 600px;
+  width: 500px;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+.text_2023_123_1 {
+  color:#ffffff;
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  font-weight: 300;
+}
+
 
 
 
