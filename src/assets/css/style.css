@@ -288,7 +288,16 @@ a:hover {
   color: #ffffff;
 }
 .pedagogo_otsp {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+}
+.text_2023_1 {
+  font-size: 60px;
+  color: #ffffff;
+}
+.body2023_123456 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
