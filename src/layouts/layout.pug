@@ -7,11 +7,12 @@ html(lang="en")
 
         link(rel="stylesheet" href="./css/style.css")
 
-        script(src="./js/script.js" defer="defer") 
-        script(src="./js/https___cdn.jsdelivr.net_npm_swiper@9_swiper-element-bundle.min.js")
+        link(rel='stylesheet' href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        
 
         title Педагоги прошлого и настоящего
     body
         include ../includes/header
         block body
         include ../includes/footer
+        script(src="./js/script.js" defer="defer" type="module") 
