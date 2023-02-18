@@ -22,7 +22,7 @@ const styles = document.createElement("style");
 
 let stylesContent = "";
 
-for (const image of images) {
+const addStyles = (image) => {
   const v = new Vibrant(image.src);
 
   const paths = image.src.split("/");
@@ -33,28 +33,42 @@ for (const image of images) {
 
   image.classList.add(name);
 
-  v.getPalette().then((r) => {
-    const rgb = r.Vibrant.getRgb();
+  v.getPalette()
+    .then((r) => {
+      const rgb = r.Vibrant.getRgb();
 
-    stylesContent =
-      stylesContent +
-      `
-      .${name} { 
+      stylesContent =
+        stylesContent +
+        `
+      .${name} {
         background-color: rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
-      
-      .${name}:hover { 
+
+      .${name}:hover {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
 
-      .kartochka:hover .${name} { 
+      .kartochka:hover .${name} {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
     `;
 
-    if (image === images[images.length - 1]) {
-      styles.innerHTML = stylesContent;
-      document.body.appendChild(styles);
-    }
-  });
+      if (image === images[images.length - 1]) {
+        styles.innerHTML = stylesContent;
+      }
+    })
+    .catch((e) => {
+      console.log(e);
+    });
+};
+
+for (const image of images) {
+  console.log(image.complete)
+  image.onload = () => {
+    addStyles(image);
+  };
+
+  addStyles(image);
 }
+
+document.body.appendChild(styles);

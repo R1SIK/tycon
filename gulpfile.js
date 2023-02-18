@@ -3,6 +3,7 @@ const pug = require("gulp-pug");
 const rollup = require("@rollup/stream");
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
+const connect = require("gulp-connect");
 
 // *Optional* Depends on what JS features you want vs what browsers you need to support
 // *Not needed* for basic ES6 module import syntax support
@@ -67,11 +68,16 @@ exports.views = () => {
     .pipe(dest("./dist"));
 };
 
+exports.webserver = () => {
+  return connect.server();
+};
+
 exports.default = series(
   exports.views,
   exports.js,
   exports.css,
   exports.images,
+  // exports.webserver,
   (cb) => {
     watch("src/**/*", exports.views);
     watch("src/assets/js/index.js", exports.js);
