@@ -10,7 +10,7 @@ if (swiperDomElement) {
     setTimeout(() => {
       swiper.slideNext();
       swiperNext();
-    }, 7000);
+    }, 4000);
   };
 
   swiperNext();
