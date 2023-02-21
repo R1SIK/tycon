@@ -86,3 +86,5 @@ exports.default = series(
     cb();
   }
 );
+
+exports.build = series(exports.views, exports.js, exports.css, exports.images);

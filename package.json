@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp views"
+    "build": "gulp build"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "gulp-connect": "^5.7.0",
+    "medium-zoom": "^1.0.8",
     "node-vibrant": "^3.2.1-alpha.1",
     "swiper": "^9.0.5"
   }

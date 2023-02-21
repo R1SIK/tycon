@@ -1,7 +1,11 @@
 import Swiper from "swiper";
 import Vibrant from "node-vibrant/dist/vibrant";
+import mediumZoom from "medium-zoom";
+
+mediumZoom("[data-zoomable]");
 
 const swiperDomElement = document.querySelector(".swiper");
+const les = document.querySelector(".les");
 
 if (swiperDomElement) {
   const swiper = new Swiper(".swiper", {});
@@ -14,6 +18,17 @@ if (swiperDomElement) {
   };
 
   swiperNext();
+
+  const prev = les.querySelector(".swiper-button-prev");
+  const next = les.querySelector(".swiper-button-next");
+
+  prev.addEventListener("click", () => {
+    swiper.slidePrev();
+  });
+
+  next.addEventListener("click", () => {
+    swiper.slideNext();
+  });
 }
 
 const images = document.querySelectorAll("img");
@@ -48,6 +63,10 @@ const addStyles = (image) => {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
 
+      .medium-zoom-overlay .${name} {
+        box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
+      }
+
       .kartochka:hover .${name} {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
@@ -63,7 +82,7 @@ const addStyles = (image) => {
 };
 
 for (const image of images) {
-  console.log(image.complete)
+  console.log(image.complete);
   image.onload = () => {
     addStyles(image);
   };
