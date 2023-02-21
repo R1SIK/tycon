@@ -2,8 +2,6 @@ import Swiper from "swiper";
 import Vibrant from "node-vibrant/dist/vibrant";
 import mediumZoom from "medium-zoom";
 
-mediumZoom("[data-zoomable]");
-
 const swiperDomElement = document.querySelector(".swiper");
 const les = document.querySelector(".les");
 
@@ -63,7 +61,7 @@ const addStyles = (image) => {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
 
-      .medium-zoom-overlay .${name} {
+      .medium-zoom-image--opened.${name} {
         box-shadow: 0 0 20px rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]});
       }
 
@@ -80,6 +78,8 @@ const addStyles = (image) => {
       console.log(e);
     });
 };
+
+mediumZoom("[data-zoomable]");
 
 for (const image of images) {
   console.log(image.complete);
