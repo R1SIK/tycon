@@ -463,3 +463,20 @@ img:hover {
   float: left;
   max-width: 500px;
 }
+
+.swiper__wrapper {
+  max-width: 1600px;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.medium-zoom-overlay.medium-zoom-overlay.medium-zoom-overlay {
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(6px);
+}
+
+.medium-zoom-image {
+  z-index: 999;
+}
