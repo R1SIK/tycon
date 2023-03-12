@@ -585,3 +585,63 @@ img:hover {
   height: 200px;
 }
 }
+
+
+/* adaptiv for 480px */
+
+@media screen and (max-width: 480px) {
+  .sitata_box {
+    margin-left: 0px;
+  }
+  .kortinka {
+    height: 250px;
+  }
+  .text-sitata2 {
+    position: relative;
+  }
+  .swiper-button-next.swiper-button-next {
+    margin-right: -10px;
+    margin-top: 90px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.158);
+  }
+  .swiper-button-prev.swiper-button-prev {
+    margin-left: -10px;
+    margin-top: 90px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.text_korobka {
+  font-size: 20px;
+}
+.header {
+  height: 140px;
+}
+.pedagogprosh12 {
+  flex-direction: column;
+}
+.pedagogprosh123 {
+  flex-direction: column;
+}
+.body2023_2 {
+  display: block;
+}
+.kortinka5 {
+  height: 300px;
+  width: 400px;
+  margin-left: -50px;
+}
+.kortinka3 {
+  height: 300px;
+}
+.body2023_1 {
+  justify-content: center;
+}
+.kortinka32 {
+  height: 300px;
+  max-width: 480px;
+}
+.kortinka8 {
+  height: 300px;
+}
+}
