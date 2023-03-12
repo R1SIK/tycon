@@ -494,3 +494,94 @@ img:hover {
   padding: 5px;
   margin-left: 5px;
 }
+
+/* adaptiv for 320px */
+@media  screen and (max-width:320px) {
+  .text-sitata2 {
+    position: relative;
+  }
+  .kortinka {
+    height: 200px;
+  }
+  .sitata_box {
+    display: block;
+  }
+  .header__nav {
+    display: block;
+  }
+  .header {
+    height: 220px;
+  }
+  .swiper-button-next.swiper-button-next {
+    margin-right: -10px;
+    margin-top: 90px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.158);
+  }
+  .swiper-button-prev.swiper-button-prev {
+    margin-left: -10px;
+    margin-top: 90px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+.pedagogprosh12 {
+  flex-direction: column;
+}
+.pedagogprosh123 {
+  flex-direction: column;
+}
+.kortinka6 {
+  margin-bottom: 20px;
+  height: 300px;
+}
+.pedagog2 {
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text_2023_1 {
+  font-size: 50px;
+}
+.body2023_2 {
+  max-width: 320px;
+}
+.kortinka5 {
+  height: 200px;
+  width: 280px;
+  margin-left: -70px;
+}
+.body2023_2 {
+  display: block;
+}
+.body2023_1 {
+  justify-content: center;
+  align-items: center;
+}
+.img_left {
+  margin-right: 0px;
+}
+.kortinka3 {
+  height: 200px;
+}
+.img_right {
+  margin-left: 0px;
+}
+.body2023_1_1 {
+  justify-content: center;
+}
+.text_korobka {
+  font-size: 17px;
+}
+.kortinka32 {
+  height: 200px;
+  max-width: 320px;
+}
+.kortinka4 {
+  height: 400px;
+}
+.kortinka8 {
+  height: 200px;
+}
+}
