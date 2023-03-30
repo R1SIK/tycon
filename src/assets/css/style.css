@@ -434,11 +434,14 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .text-sitata {
-    flex-direction: column-reverse;
+  .text-sitata2 {
+    position: relative;
   }
   .kortinka {
-    height: auto;
+    height: 200px;
+  }
+  .sitata_box {
+    display: block;
   }
   .h1 {
     font-size: 30px;
@@ -447,13 +450,64 @@ a:hover {
     max-height: 400px;
     font-size: 23px;
   }
+  .sitata_box {
+    display: block;
+  }
+  .header {
+    height: 160px;
+  }
+  .pedagogprosh12 {
+    flex-direction: column;
+  }
+  .pedagogprosh123 {
+    flex-direction: column;
 }
-
+.kortinka5 {
+  height: 200px;
+  width: 280px;
+  margin-left: -70px;
+}
+.body2023_2 {
+  display: block;
+}
+.body2023_1 {
+  justify-content: center;
+  align-items: center;
+}
+.text_korobka {
+  font-size: 17px;
+}
+.kortinka6 {
+  margin-bottom: 20px;
+  height: 300px;
+}
+.img_left {
+  margin-right: 0px;
+}
+.kortinka3 {
+  height: 200px;
+}
+.img_right {
+  margin-left: 0px;
+}
+.body2023_1_1 {
+  justify-content: center;
+}
+.kortinka32 {
+  height: 200px;
+  max-width: 360px;
+}
+.kortinka4 {
+  height: 400px;
+}
+.kortinka8 {
+  height: 150px;
+}
+}
 img:hover {
   transition: 0.2s;
 }
 .kortinka8 {
-  height: 500px;
   display: flex;
   justify-content: left;
   align-items: left;
@@ -589,7 +643,7 @@ img:hover {
 
 /* adaptiv for 480px */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 361px) {
   .sitata_box {
     margin-left: 0px;
   }
@@ -647,7 +701,7 @@ img:hover {
 }
 
 /* adaptiv for 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width:481px) {
   .text-sitata2 {
     position: relative;
   }
